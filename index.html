@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://api.fontshare.com/v2/css?f[]=general-sans@500,600,400,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.8.0/chart.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps:wght@400&display=swap" rel="stylesheet">
+    <title>WordVine</title>
+    <script type="module" crossorigin src="/assets/index-kE3FGYuk.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-1tcnFTmm.css">
+  </head>
+  <body>
+    <header class="header container">
+      <div data-alert-container class="alert-container"></div>
+      <nav>
+          <h2 class="header__title">WordVine</h2>
+          <ul class="header__menu">
+          
+            <li class="header__link">
+              <a href="#">
+                <button class="header__stats">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                    <path d="M18.375 2.25c-1.035 0-1.875.84-1.875 1.875v15.75c0 1.035.84 1.875 1.875 1.875h.75c1.035 0 1.875-.84 1.875-1.875V4.125c0-1.036-.84-1.875-1.875-1.875h-.75ZM9.75 8.625c0-1.036.84-1.875 1.875-1.875h.75c1.036 0 1.875.84 1.875 1.875v11.25c0 1.035-.84 1.875-1.875 1.875h-.75a1.875 1.875 0 0 1-1.875-1.875V8.625ZM3 13.125c0-1.036.84-1.875 1.875-1.875h.75c1.036 0 1.875.84 1.875 1.875v6.75c0 1.035-.84 1.875-1.875 1.875h-.75A1.875 1.875 0 0 1 3 19.875v-6.75Z" />
+                  </svg>                  
+                </button>
+              </a>
+            </li>
+            <li class="header__link">
+              <a href="#reminder">
+                <button class="header__reminder">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6">
+                    <path fillRule="evenodd" d="M5.25 9a6.75 6.75 0 0 1 13.5 0v.75c0 2.123.8 4.057 2.118 5.52a.75.75 0 0 1-.297 1.206c-1.544.57-3.16.99-4.831 1.243a3.75 3.75 0 1 1-7.48 0 24.585 24.585 0 0 1-4.831-1.244.75.75 0 0 1-.298-1.205A8.217 8.217 0 0 0 5.25 9.75V9Zm4.502 8.9a2.25 2.25 0 1 0 4.496 0 25.057 25.057 0 0 1-4.496 0Z" clipRule="evenodd" />
+                  </svg>                  
+                </button>
+              </a>
+            </li>
+            <li class="header__link">
+              <a href="#contact">
+                <button class="header__contact">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                    <path d="M1.5 8.67v8.58a3 3 0 0 0 3 3h15a3 3 0 0 0 3-3V8.67l-8.928 5.493a3 3 0 0 1-3.144 0L1.5 8.67Z" />
+                    <path d="M22.5 6.908V6.75a3 3 0 0 0-3-3h-15a3 3 0 0 0-3 3v.158l9.714 5.978a1.5 1.5 0 0 0 1.572 0L22.5 6.908Z" />
+                  </svg>
+                </button>
+              </a>
+            </li>
+            <li class="header__link">
+              <a href="#Rules">
+                <button class="header__rules">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                    <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm11.378-3.917c-.89-.777-2.366-.777-3.255 0a.75.75 0 0 1-.988-1.129c1.454-1.272 3.776-1.272 5.23 0 1.513 1.324 1.513 3.518 0 4.842a3.75 3.75 0 0 1-.837.552c-.676.328-1.028.774-1.028 1.152v.75a.75.75 0 0 1-1.5 0v-.75c0-1.279 1.06-2.107 1.875-2.502.182-.088.351-.199.503-.331.83-.727.83-1.857 0-2.584ZM12 18a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Z" clip-rule="evenodd" />
+                  </svg>                                  
+                </button>
+              </a>
+            </li>
+          </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="container" id="scoreboard">
+
+        <div id="timer-container">
+            <div>Time:&nbsp; </div>
+            <div class= 'timer' id="timer">0</div>
+        </div>
+
+        <div id="guess-container">
+            <div>Guesses:&nbsp; </div>
+            <div class="guesses"  id="guessCounter" guess-counter>0</div>
+        </div>
+        
+          <div id="hint-container">
+            <div>Hints:&nbsp; </div>
+            <div class="hints"  id="hintCounter" guess-counter>0</div>
+          </div>
+
+    </div>
+      
+      <div data-guess-grid class="guess-grid container" id="guessgrid-container">
+          <div row="1" col="1" class="tile"></div>
+          <div row="1" col="2" class="tile"></div>
+          <div row="1" col="3" class="tile"></div>
+          <div row="1" col="4" class="tile"></div>
+          <div row="1" col="5" class="tile"></div>
+          <div row="1" col="6" class="tile"></div>
+      
+          <div row="2" col="1" class="tile"></div>
+          <div row="2" col="2" class="tile"></div>
+          <div row="2" col="3" class="tile"></div>
+          <div row="2" col="4" class="tile"></div>
+          <div row="2" col="5" class="tile"></div>
+          <div row="2" col="6" class="tile"></div>
+      
+          <div row="3" col="1" class="tile"></div>
+          <div row="3" col="2" class="tile"></div>
+          <div row="3" col="3" class="tile"></div>
+          <div row="3" col="4" class="tile"></div>
+          <div row="3" col="5" class="tile"></div>
+          <div row="3" col="6" class="tile"></div>
+      
+          <div row="4" col="1" class="tile"></div>
+          <div row="4" col="2" class="tile"></div>
+          <div row="4" col="3" class="tile"></div>
+          <div row="4" col="4" class="tile"></div>
+          <div row="4" col="5" class="tile"></div>
+          <div row="4" col="6" class="tile"></div>
+      
+          <div row="5" col="1" class="tile"></div>
+          <div row="5" col="2" class="tile"></div>
+          <div row="5" col="3" class="tile"></div>
+          <div row="5" col="4" class="tile"></div>
+          <div row="5" col="5" class="tile"></div>
+          <div row="5" col="6" class="tile"></div>
+      
+          <div row="6" col="1" class="tile"></div>
+          <div row="6" col="2" class="tile"></div>
+          <div row="6" col="3" class="tile"></div>
+          <div row="6" col="4" class="tile"></div>
+          <div row="6" col="5" class="tile"></div>
+          <div row="6" col="6" class="tile"></div>
+      </div>
+     
+      <div id="hint-button">
+        <button class="hint_button" data-help="help">Next Letter</button>
+      </div>
+
+ 
+      <div data-keyboard class='container' id="keyboard">
+        <button class="key" data-key="Q">Q</button>
+        <button class="key" data-key="W">W</button>
+        <button class="key" data-key="E">E</button>
+        <button class="key" data-key="R">R</button>
+        <button class="key" data-key="T">T</button>
+        <button class="key" data-key="Y">Y</button>
+        <button class="key" data-key="U">U</button>
+        <button class="key" data-key="I">I</button>
+        <button class="key" data-key="O">O</button>
+        <button class="key" data-key="P">P</button>
+        <div class="space"></div>
+        <button class="key" data-key="A">A</button>
+        <button class="key" data-key="S">S</button>
+        <button class="key" data-key="D">D</button>
+        <button class="key" data-key="F">F</button>
+        <button class="key" data-key="G">G</button>
+        <button class="key" data-key="H">H</button>
+        <button class="key" data-key="J">J</button>
+        <button class="key" data-key="K">K</button>
+        <button class="key" data-key="L">L</button>
+        <div class="space"></div>
+        <button data-enter class="key large">Enter</button>
+        <button class="key" data-key="Z">Z</button>
+        <button class="key" data-key="X">X</button>
+        <button class="key" data-key="C">C</button>
+        <button class="key" data-key="V">V</button>
+        <button class="key" data-key="B">B</button>
+        <button class="key" data-key="N">N</button>
+        <button class="key" data-key="M">M</button>
+        <button data-delete class="key large">Delete</button>
+      </div>
+
+      <!-- stats pop up modal -->
+      <div class="outer-stats-modal container1" id="outer-stats-modal">
+        <div class="container1 stats-modal">
+
+          <div class="stats-header container1">
+            <h2 class="stats__margin container1"></h2>
+            <h2 class="stats__head container1">STATISTICS</h2>
+            <h2 class="stats__close container1">
+              <a href="#">
+                <button data-close-stat-modal class="stats__pop__close">x</button>
+              </a>
+              </h2>
+          </div>
+
+          <div class="scores-container container1">
+            <div class="scores__streak container1">
+              <div data-streak-count class="scores__streak__num container1">1</div>
+              <div class="scores__streak__streak container1">Streak</div>
+            </div>
+
+            <div class="scores__best container1">
+                <div data-best-score class="scores__best__num container1">0</div>
+                <div class="scores__best__best container1">Best</div>
+            </div>
+
+            <div class="scores__avg container1">
+              <div data-avg-score class="scores__avg__num container1">0</div>
+              <div class="scores__avg__avg container1">Avg</div>
+            </div>
+            <div class="scores__avg container1">
+              <div data-last-score class="scores__last__num container1">0</div>
+              <div class="scores__last__last container1">Last</div>
+            </div>
+
+          </div>
+
+          <div class="graph-container container1">
+            <h3 class="graph__header container1">Last 10 Scores</h3>
+            <div class="graph__graph">
+              <canvas id="linechart" style="width:100%; height:100%;"></canvas>
+            </div>
+          </div>
+
+          <div class="share-container">
+            <button data-share class="share-button">SHARE</button>
+          </div>
+
+        </div>
+      </div>
+      <!-- END stats pop up modal -->
+
+    </main>
+  </body>
+</html>
